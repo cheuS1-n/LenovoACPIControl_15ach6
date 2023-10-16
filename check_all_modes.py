@@ -1,3 +1,4 @@
+# Автор/Author: cheuS1(https://github.com/cheuS1-n/). Приємного користування! Good using!
 import os
 import subprocess
 

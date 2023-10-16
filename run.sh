@@ -21,3 +21,4 @@ fi
 echo "Updating repository"
 git pull
 sudo python3 main.py
+# Автор/Author: cheuS1(https://github.com/cheuS1-n/). Приємного користування! Good using!
