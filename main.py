@@ -63,27 +63,27 @@ while True:
     vrt = input("What i can do?: ")
 
     if vrt == "1":
-        print(f"Command sended! Return value: {send_rapid_off()}\n")
+        print(f"Command sended! Returned value: {send_rapid_off()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "2":
-        print(f"Command sended! Return value: {send_rapid_on()}\n")
+        print(f"Command sended! Returned value: {send_rapid_on()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "3":
-        print(f"Command sended! Return value: {send_conversation_off()}\n")
+        print(f"Command sended! Returned value: {send_conversation_off()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "4":
-        print(f"Command sended! Return value: {send_conversation_on()}\n")
+        print(f"Command sended! Returned value: {send_conversation_on()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "5":
-        print(f"Command sended! Return value: {send_FN_lock_off()}\n")
+        print(f"Command sended! Returned value: {send_FN_lock_off()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "6":
-        print(f"Command sended! Return value: {send_FN_lock_on()}\n")
+        print(f"Command sended! Returned value: {send_FN_lock_on()}\n")
         sleep(1.5)
         startmsg()
     elif vrt == "7":
@@ -95,7 +95,7 @@ while True:
         if cmdi == 0:
             startmsg()
         else:
-            print(f"Command sended! Return value: {send_own_acpi_command(cmdi)}\n")
+            print(f"Command sended! Returned value: {send_own_acpi_command(cmdi)}\n")
             sleep(3)
             startmsg()
     elif vrt == "0":
