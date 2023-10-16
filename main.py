@@ -5,7 +5,8 @@ from os import system
 from time import sleep
 
 def modprobestart():
-    os.system("")
+    os.system("sudo modprobe acpi_call")
+    sleep(2)
 def startmsg():
     os.system("export TERM=xterm-256color")
     os.system("clear")
@@ -20,7 +21,9 @@ def startmsg():
       "8. Send Your Own ACPI command (DANGER!!!)\n"
       "0. Exit to console\n"
           )
+modprobestart()
 startmsg()
+
 #DEFs
 
 
