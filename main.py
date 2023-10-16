@@ -96,7 +96,7 @@ while True:
         print("Type 0 for return to main menu\n")
         print("Type your command please: ")
         cmdi = input()
-        if cmdi == 0:
+        if cmdi == "0":
             startmsg()
         else:
             print(f"Command sended! Returned value: {send_own_acpi_command(cmdi)}\n")
