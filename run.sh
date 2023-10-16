@@ -18,5 +18,6 @@ if [ "" = "$PKG_OK1" ]; then
   echo "No $REQUIRED_PKG1. Setting up $REQUIRED_PKG1."
   sudo apt-get --yes install $REQUIRED_PKG1
 fi
-
+echo "Updating repository"
+git pull
 sudo python3 main.py
