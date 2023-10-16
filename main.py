@@ -10,7 +10,7 @@ def modprobestart():
 def startmsg():
     os.system("export TERM=xterm-256color")
     os.system("clear")
-    print("Lenovo ACPI/Driver comamnd sender | by cheuS1 with love :3\n"
+    print("Lenovo ACPI/Driver command sender | by cheuS1 with love :3\n"
       "1. Send Rapid Charge OFF (ACPI)\n"
       "2. Send Rapid ON (ACPI)\n"
       "3. Send Conversation Mode OFF (ACPI)\n"
