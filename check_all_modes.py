@@ -22,7 +22,7 @@ def text():
       f"Perfomance mode: {cp}   0x2 Battery Save | 0x0 Balanced | 0x1 Max Perfomance  (Fn+Q)\n"
       f"FN_lock: {cf}\n"
       "Rapid Charge: DONT HAVE METHOD FOR PARSE STATE\n"
-      f"Conversation mode: {cc}\n")
+      f"Conservation mode: {cc}\n")
     return a
 
 print(text())
