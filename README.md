@@ -5,15 +5,15 @@ A script for controlling fan modes, fast charging mode, battery saving, FN_lock,
 
 # Run
 
-    sudo apt install git #Install git
+    sudo apt install git 
 
-    git clone https://github.com/cheuS1-n/LenovoACPIControl_15ach6 #Clone repository
+    git clone https://github.com/cheuS1-n/LenovoACPIControl_15ach6 
 
-    cd LenovoACPIControl_15ach6 # go to the LenovoACPIControl_15ach6
+    cd LenovoACPIControl_15ach6 
     
-    chmod +x run.sh # grant privilegies
+    chmod +x run.sh
 
-    ./run.sh # Just run!
+    ./run.sh 
 
 
 
