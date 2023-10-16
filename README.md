@@ -20,4 +20,3 @@ A script for controlling fan modes, fast charging mode, battery saving, FN_lock,
 ## Addition
 If you have additional codes for ACPI, then please send them to Issues with a description of the actions of this code, thanks!
 
-```
