@@ -21,3 +21,6 @@ You won't see anything to indicate that the regime has changed, but it is changi
 
 ## Addition
 If you have additional codes for ACPI, then please send them to Issues with a description of the actions of this code, thanks!
+
+[Українська мова/Ukrainian language](https://github.com/cheuS1-n/LenovoACPIControl_15ach6/blob/main/README.uk.md)
+
