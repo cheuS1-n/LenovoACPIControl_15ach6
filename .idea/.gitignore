@@ -1,0 +1,14 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+/vcs.xml
+/inspectionProfiles/profiles_settings.xml
+/modules.xml
+/misc.xml
+/LenovoACPIControl_15ach6.iml
