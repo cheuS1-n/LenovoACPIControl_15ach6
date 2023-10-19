@@ -8,6 +8,7 @@ from time import sleep
 def modprobestart():
     os.system("sudo modprobe acpi_call")
     sleep(2)
+
 def startmsg():
     os.system("export TERM=xterm-256color")
     os.system("clear")
