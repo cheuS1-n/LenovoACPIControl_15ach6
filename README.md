@@ -19,6 +19,8 @@ A script for controlling fan modes, fast charging mode, battery saving, FN_lock,
 Press Fn+Q.
 You won't see anything to indicate that the regime has changed, but it is changing. Check through point 7 of the script.
 
+# Create shortcut
+Just add --create-shortcut option when start run.sh
 ## Addition
 If you have additional codes for ACPI, then please send them to Issues with a description of the actions of this code, thanks!
 

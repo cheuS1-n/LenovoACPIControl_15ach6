@@ -1,10 +1,25 @@
 #!/usr/bin/env bash
+
+for i in "$@"; do
+  case $i in
+    --create-shortcut)
+      python3 cdsc.py
+      exit 1
+      ;;
+    -*|--*)
+      echo "Unknown option $i"
+      exit 1
+      ;;
+  esac
+done
+
+
 if [ $EUID != 0 ]; then
     sudo "$0" "$@"
     exit $?
 fi
 REQUIRED_PKG="python3"
-REQUIRED_PKG1="acpi-call"
+REQUIRED_PKG1="acpi-call-dkms"
 echo "CHECKING Python3 PACKAGE"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
 echo Checking for $REQUIRED_PKG: $PKG_OK
