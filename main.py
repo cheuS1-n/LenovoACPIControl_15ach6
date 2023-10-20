@@ -42,7 +42,6 @@ def acpimsg():
           "6. Send FN_lock ON (DRIVER)\n"
           "7. Start ACPI and Driver state monitor\n"
           "8. Send Your Own ACPI command (DANGER!!!)\n"
-          "9. CPU Settings\n"
           "0. Exit to menu\n"
           )
 
@@ -78,9 +77,11 @@ while True:
         if vrt == "1":
             acpimsg()
             settingsc(1)
+            continue
         if vrt == "2":
             cpumsg()
             settingsc(2)
+            continue
         if vrt == "0":
             os.system("clear")
             print("Goodbye!")
@@ -123,11 +124,10 @@ while True:
                 print(f"Command sended! Returned value: {send_own_acpi_command(cmdi)}\n")
                 sleep(3)
                 acpimsg()
-        elif vrt == "9":
-            settingsc(1)
-            cpumsg()
         elif vrt == "0":
             startmsg()
+            settingsc(0)
+            continue
     elif settings == 2:
         if vrt == "1":
             print(f"Governor change command sended! Returned value: ")
@@ -162,3 +162,4 @@ while True:
         if vrt == "0":
             settingsc(0)
             startmsg()
+            continue
