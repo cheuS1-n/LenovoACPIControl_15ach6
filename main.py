@@ -81,6 +81,11 @@ while True:
         if vrt == "2":
             cpumsg()
             settingsc(2)
+        if vrt == "0":
+            os.system("clear")
+            print("Goodbye!")
+            sleep(0.5)
+            sys.exit()
     if settings == 1:
         if vrt == "1":
             print(f"Command sended! Returned value: {send_rapid_off()}\n")
@@ -122,10 +127,7 @@ while True:
             settingsc(1)
             cpumsg()
         elif vrt == "0":
-            os.system("clear")
-            print("Goodbye!")
-            sleep(0.5)
-            sys.exit()
+            startmsg()
     elif settings == 2:
         if vrt == "1":
             print(f"Governor change command sended! Returned value: ")
@@ -159,4 +161,4 @@ while True:
             cpumsg()
         if vrt == "0":
             settingsc(0)
-            acpimsg()
+            startmsg()
