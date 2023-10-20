@@ -63,7 +63,7 @@ def change_scaling_governor(governor):
             print("ERROR on parsing amd_pstate ")
             return "PERROR"
     else:
-        os.system(f"echo '{governor}' > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor")
+        os.system(f"echo '{governor}' | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor")
         return True
 
 def parsepstate():

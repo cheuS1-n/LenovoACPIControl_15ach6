@@ -35,7 +35,7 @@ def acpimsg():
     os.system("clear")
     print("ACPI & Driver | Lenovo ACPI/Driver command sender | by cheuS1 with love :3\n"
           "1. Send Rapid Charge OFF (ACPI)\n"
-          "2. Send Rapid ON (ACPI)\n"
+          "2. Send Rapid Charge ON (ACPI)\n"
           "3. Send Conservation Mode OFF (ACPI)\n"
           "4. Send Conservation Mode ON (ACPI)\n"
           "5. Send FN_lock OFF (DRIVER)\n"
@@ -136,7 +136,7 @@ while True:
             cpumsg()
         if vrt == "2":
             print(f"Governor change command sended! Returned value: ")
-            print(change_scaling_governor("perfomance"))
+            print(change_scaling_governor("performance"))
             sleep(1.5)
             cpumsg()
         if vrt == "3":
