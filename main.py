@@ -61,10 +61,6 @@ modprobestart()
 startmsg()
 settingsc(0)
 
-# DEFs
-
-
-##
 
 while True:
     vrt = input("What i can do?: ")
