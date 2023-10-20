@@ -6,6 +6,7 @@ A script for controlling fan modes, fast charging mode, battery saving, FN_lock,
 # LenovoACPIControl
 
 A script for controlling fan modes, fast charging mode, battery saving, FN_lock, using ACPI and kernel driver. There is also a function of manually entering ACPI commands.
+
 ![LenovoACPITool menu](https://github.com/cheuS1-n/LenovoACPIControl_15ach6/blob/main/image.png?raw=true)
 
 # Run
