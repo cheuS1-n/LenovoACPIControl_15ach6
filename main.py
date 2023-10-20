@@ -70,10 +70,10 @@ settingsc(0)
 while True:
     vrt = input("What i can do?: ")
     if settings == 0:
-        if vrt == 1:
+        if vrt == "1":
             acpimsg()
             settingsc(1)
-        if vrt == 2:
+        if vrt == "2":
             cpumsg()
             settingsc(2)
     if settings == 1:
