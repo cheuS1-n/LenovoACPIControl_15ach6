@@ -25,7 +25,7 @@ Just add --create-shortcut option when start run.sh
 
 
 # How change AMD_PState to passive
-You need add to your boot configuration `amd_pstate=passive`
+You need add to your boot parameters `amd_pstate=passive`
 https://wiki.archlinux.org/title/kernel_parameters
 ## Addition
 If you have additional codes for ACPI, then please send them to Issues with a description of the actions of this code, thanks!
