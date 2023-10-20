@@ -21,6 +21,7 @@ def settingsc(int):
     global settings
     settings = int
 
+
 def startmsg():
     os.system("export TERM=xterm-256color")
     os.system("clear")
@@ -28,6 +29,8 @@ def startmsg():
           "1. ACPI & Driver tools\n"
           "2. CPU Settings\n"
           "0. Exit to console\n")
+
+
 def acpimsg():
     os.system("clear")
     print("ACPI & Driver | Lenovo ACPI/Driver command sender | by cheuS1 with love :3\n"
@@ -43,11 +46,14 @@ def acpimsg():
           "0. Exit to menu\n"
           )
 
+
 def pstatemsg(pstate):
     if pstate == "active":
         return "(For unlock all governors, change amd_pstate to passive)"
     else:
         return ""
+
+
 def cpumsg():
     os.system("clear")
     print("CPU Settings | Lenovo ACPI/Driver command sender | by cheuS1 with love :3\n \n"
@@ -65,7 +71,6 @@ def cpumsg():
 modprobestart()
 startmsg()
 settingsc(0)
-
 
 while True:
     vrt = input("What i can do?: ")
