@@ -58,9 +58,9 @@ def change_scaling_governor(governor):
             os.system(f"echo {governor} | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor")
             return True
         elif pstate == "active":
-            return "PSTACTIVE"
+            return "ERROR AMD_PSTATE_ACTIVE | CANT CHANGE GOVERNOR"
         else:
-            print("ERROR on parsing amd_pstate ")
+            print("ERROR PARSING AMD_PSTATE MODE")
             return "PERROR"
     else:
         os.system(f"echo '{governor}' | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor")
