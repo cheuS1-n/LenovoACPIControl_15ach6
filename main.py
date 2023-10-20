@@ -38,11 +38,15 @@ def startmsg():
           "0. Exit to console\n"
           )
 
-
+def pstatemsg(pstate):
+    if pstate == "active":
+        return "(For unlock all governors, change amd_pstate to passive)"
+    else:
+        return ""
 def cpumsg():
     os.system("clear")
     print("CPU Settings | Lenovo ACPI/Driver command sender | by cheuS1 with love :3\n \n"
-          f"AMD_PState: {parsepstate()} \nAvailable scaling governors(core0): {parsescalinggovernors()}\nCurrent scaling governor(cpu0): {parsecurrentscalinggovernors()}\n\n"
+          f"AMD_PState: {parsepstate()} {pstatemsg(parsepstate())} \nAvailable scaling governors(core0): {parsescalinggovernors()}\nCurrent scaling governor(cpu0): {parsecurrentscalinggovernors()}\n\n"
           "1. Change governor to powersave\n"
           "2. Change governor to perfomance\n"
           "3. Change governor to ondemand\n"
