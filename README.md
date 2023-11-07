@@ -18,7 +18,7 @@ A script for controlling fan modes, fast charging mode, battery saving, FN_lock,
 
 # Changing perfomance mode
 Press Fn+Q.
-You won't see anything to indicate that the regime has changed, but it is changing. Check through point 7 of the script.
+You won't see anything to indicate that the mode has changed, but it is changing. Check through point 7 of the script.
 
 # Create shortcut
 Just add --create-shortcut option when start run.sh
