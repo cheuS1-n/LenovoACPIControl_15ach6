@@ -2,8 +2,6 @@ import os
 import subprocess
 import argparse
 
-import keyboard
-
 
 # ACPI & DRIVER
 def send_rapid_off():
