@@ -19,15 +19,21 @@ def check_conversation():
     s = subprocess.getstatusoutput('cat /proc/acpi/call')
     return s[1]
 
+def check_rapidCharge():
+    os.system("echo '\_SB.PCI0.LPC0.EC0.FCGM' > /proc/acpi/call")
+    s = subprocess.getstatusoutput('cat /proc/acpi/call')
+    return s[1]
+
 
 def text():
     cc = check_conversation()
     cp = check_powermode()
     cf = check_FNlock()
+    cr = check_rapidCharge()
     a = (f"CHECK MODES\n"
          f"Perfomance mode: {cp}   0x2 Battery Save | 0x0 Balanced | 0x1 Max Perfomance  (Fn+Q)\n"
          f"FN_lock: {cf}\n"
-         "Rapid Charge: DONT HAVE METHOD FOR PARSE STATE\n"
+         f"Rapid Charge: {cr}\n"
          f"Conservation mode: {cc}\n")
     return a
 
